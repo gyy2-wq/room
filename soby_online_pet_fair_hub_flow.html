@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쏘바이 온라인 펫페어 연결 허브 플로우</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;700&display=swap');
+        body { font-family: 'Pretendard', sans-serif; background-color: #fcfcfd; }
+        .hub-card { transition: all 0.2s ease-in-out; }
+        .shelter-badge { background: linear-gradient(90deg, #f59e0b 0%, #ea580c 100%); }
+    </style>
+</head>
+<body class="py-10 px-4">
+
+    <div class="max-w-2xl mx-auto">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <div class="inline-block shelter-badge text-white text-xs font-bold px-4 py-1.5 rounded-full mb-4 shadow-sm tracking-tight">
+                🐾 동물구조단체 주관 유기동물 지원 캠페인
+            </div>
+            <div class="text-slate-400 text-xs font-mono tracking-[0.2em] mb-2">SOBY ONLINE PET FAIR 2026</div>
+            <h1 class="text-4xl font-extrabold text-slate-900 tracking-tighter leading-tight uppercase">쏘바이 온라인 펫페어</h1>
+            <div class="mt-6 inline-block bg-orange-50 px-6 py-3 rounded-2xl border border-orange-100">
+                <p class="text-orange-700 text-lg font-bold">"소중한 구매가 생명을 살리는 후원이 됩니다"</p>
+            </div>
+            <p class="text-slate-500 mt-4 text-sm leading-relaxed">
+                모든 판매 수익금의 10%는 구조된 아이들의<br>
+                치료비와 사료비, 보호소 환경 개선에 전액 사용됩니다.
+            </p>
+        </header>
+
+        <!-- Main Flow -->
+        <div class="relative space-y-6">
+            <!-- Vertical Line for Design -->
+            <div class="absolute left-9 top-0 bottom-0 w-0.5 bg-slate-200 -z-10 hidden md:block"></div>
+            
+            <!-- Step 1: Shelter Page -->
+            <div class="hub-card bg-white p-6 rounded-3xl shadow-sm border border-slate-100 flex flex-col md:flex-row gap-6 items-start">
+                <div class="bg-slate-900 text-white w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-lg shrink-0 shadow-lg shadow-slate-200 font-mono">01</div>
+                <div>
+                    <h3 class="text-xl font-bold text-slate-800">쏘바이 캠페인 페이지 접속</h3>
+                    <p class="text-slate-600 mt-2 leading-relaxed">
+                        구조단체가 운영하는 <strong>SOBY 리틀리</strong> 페이지에서 2026 펫페어 라인업을 확인합니다. 각 브랜드의 따뜻한 동참 취지를 읽어보세요.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 2: Brand List -->
+            <div class="hub-card bg-white p-6 rounded-3xl shadow-sm border border-slate-100 flex flex-col md:flex-row gap-6 items-start">
+                <div class="bg-slate-900 text-white w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-lg shrink-0 shadow-lg shadow-slate-200 font-mono">02</div>
+                <div>
+                    <h3 class="text-xl font-bold text-slate-800">착한 브랜드 큐레이션</h3>
+                    <p class="text-slate-600 mt-2 leading-relaxed">
+                        수익금 환원에 동의한 파트너 브랜드의 상품 카드를 선택합니다. 
+                        <br><span class="text-orange-600 font-semibold text-sm">✓ 클릭 시 해당 브랜드 공식 자사몰로 안전하게 이동합니다.</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 3: Outbound Link -->
+            <div class="hub-card bg-orange-50 p-6 rounded-3xl shadow-sm border-2 border-orange-200 flex flex-col md:flex-row gap-6 items-start">
+                <div class="bg-orange-500 text-white w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-lg shrink-0 shadow-lg shadow-orange-200 font-mono">03</div>
+                <div>
+                    <h3 class="text-xl font-bold text-orange-900 font-bold uppercase">External Mall Direct Link</h3>
+                    <p class="text-orange-800 mt-2 leading-relaxed">
+                        쏘바이 전용 링크를 통해 파트너사의 **공식 자사몰**에 접속합니다. 이 경로를 통한 구매만이 기부금으로 산정됩니다.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 4: Purchase -->
+            <div class="hub-card bg-white p-6 rounded-3xl shadow-sm border border-slate-100 flex flex-col md:flex-row gap-6 items-start">
+                <div class="bg-slate-900 text-white w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-lg shrink-0 shadow-lg shadow-slate-200 font-mono">04</div>
+                <div>
+                    <h3 class="text-xl font-bold text-slate-800">자사몰 결제 및 배송</h3>
+                    <p class="text-slate-600 mt-2 leading-relaxed">
+                        브랜드사 쇼핑몰에서 평소처럼 결제하세요. 상품의 품질 보증과 배송, 고객 응대는 브랜드사에서 책임지고 진행합니다.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 5: Donation -->
+            <div class="hub-card bg-emerald-50 p-6 rounded-3xl shadow-sm border-2 border-emerald-200 flex flex-col md:flex-row gap-6 items-start">
+                <div class="bg-emerald-600 text-white w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-lg shrink-0 shadow-lg shadow-emerald-200 font-mono">05</div>
+                <div>
+                    <h3 class="text-xl font-bold text-emerald-900 font-bold">수익금의 10% 기부 전달</h3>
+                    <p class="text-emerald-800 mt-2 leading-relaxed font-medium">
+                        캠페인 종료 후, 브랜드사는 쏘바이를 통한 매출의 10%를 정산하여 동물구조단체에 전달하며, 이는 구조 동물을 위한 소중한 자산이 됩니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Structure Summary -->
+        <div class="mt-12 bg-slate-900 text-white p-8 rounded-[2rem]">
+            <h2 class="text-xl font-bold mb-6 flex items-center gap-2 text-orange-400 font-mono uppercase tracking-tight">
+                Mission & Partnership
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
+                <div class="space-y-3">
+                    <p class="text-white font-bold text-lg flex items-center gap-2">
+                        <span class="w-1.5 h-4 bg-orange-500 rounded-full"></span>쏘바이 (SOBY)
+                    </p>
+                    <ul class="text-slate-300 space-y-2 leading-relaxed">
+                        <li>• 구조단체 주관 홍보 플랫폼 운영</li>
+                        <li>• 진정성 있는 브랜드 및 상품 검증</li>
+                        <li>• 후원금 사용 내역 투명 공지</li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <p class="text-white font-bold text-lg flex items-center gap-2">
+                        <span class="w-1.5 h-4 bg-slate-500 rounded-full"></span>파트너 브랜드
+                    </p>
+                    <ul class="text-slate-300 space-y-2 leading-relaxed">
+                        <li>• 자사 쇼핑몰 상품 및 결제 서비스</li>
+                        <li>• 원활한 배송 및 사후 서비스(CS)</li>
+                        <li>• 매출의 10% 사회공헌 기부 이행</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-12 text-center pb-10">
+            <p class="text-slate-400 text-[10px] font-mono tracking-[0.3em] mb-4 uppercase">
+                &copy; 2026 SOBY ONLINE PET FAIR. ALL RIGHTS RESERVED.
+            </p>
+            <div class="flex justify-center gap-4">
+                <span class="w-1 h-1 rounded-full bg-slate-300"></span>
+                <span class="w-1 h-1 rounded-full bg-slate-300"></span>
+                <span class="w-1 h-1 rounded-full bg-slate-300"></span>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
